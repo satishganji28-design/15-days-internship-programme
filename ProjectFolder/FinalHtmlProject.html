@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <meta name="description" content="Satish Ganji is a web developer with expertise in HTML, CSS, JavaScript, and React. Explore his portfolio to see his projects and skills.">
+    <meta name="keywords" content="Satish Ganji, web developer, portfolio, HTML, CSS, JavaScript, React, projects">
+    <meta name="author" content="Satish Ganji">
+
+     <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Satish Ganji| Web Developer">
+    <meta property="og:description" content="Satish Ganji is a web developer with expertise in HTML, CSS, JavaScript, and React. Explore his portfolio to see his projects and skills.">
+    <meta property="og:image" content="https://th.bing.com/th/id/OIP.bXfmLZlDiZXoyd3-ZLAgygHaJl?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Satish Ganji| Web Developer">
+    <meta name="twitter:description" content="Satish Ganji is a web developer with expertise in HTML, CSS, JavaScript, and React. Explore his portfolio to see his projects and skills.">
+    <meta name="twitter:image" content="https://images.template.net/170401/portfolio-design-template-ylg3g.jpg">
+
+    <link rel="icon" type="image/x-icon" href="../Day 3/portfolio.webp">
+
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="logo">Satish Ganji</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" title="Toggle Dark Mode">
+                🌙
+            </button>
+
+            <button class="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+                ☰
+            </button>
+
+
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="hero" class="hero-section">
+            <h1>Hello, <span class="highlight">I'm Satish Ganji</span></h1>
+            <p class="tagline">I'm a passionate web developer with expertise in HTML, CSS, JavaScript, and React. I love creating interactive and responsive web applications that provide great user experiences.</p>
+            <div class="hero-buttons">
+                <a href="btn btn-primary">View My Work</a>
+                <a href="btn btn-secondary">Contact Me</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <figure>
+                    <img src="../Day 3/portfolio.webp" alt="Profile Picture" width="200" height="200">
+                    <figcaption>Satish Ganji - Web Developer</figcaption>
+                </figure>
+                <div class="about-text">
+                    <p>Hello! I'm Satish Ganji, a web developer with a passion for creating dynamic and user-friendly web applications. I specialize in front-end development using HTML, CSS, JavaScript, and React. My goal is to build websites that are not only visually appealing but also provide seamless user experiences.</p>
+                    <p>With a strong foundation in web technologies and a keen eye for design, I strive to deliver high-quality projects that meet client expectations. I am constantly learning and staying updated with the latest trends in web development to enhance my skills and deliver innovative solutions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>HTML</h3>
+                    <p>Proficient in creating semantic and accessible web pages using HTML5.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>CSS</h3>
+                    <p>Experienced in styling web pages with CSS3, including Flexbox and Grid layouts.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>JavaScript</h3>
+                    <p>Skilled in JavaScript for adding interactivity and dynamic content to web applications.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>React</h3>
+                    <p>Knowledgeable in building modern web applications using React.js and its ecosystem.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+             <article class="project-card" data-category="Web">
+                <img src="../Day 3/project1.webp" alt="Weather App Ss">
+                <h3>Weather App</h3>
+                <p>A web application that provides real-time weather information and forecasts for any location.</p>
+                <div>
+                    <span class="tag">REACT</span>
+                    <span class="tag">API</span>
+                </div>
+                <a href=""class="btn ">Live Demo</a>
+                <a href="" class="btn ">GitHub</a>
+
+             </article>   
+            
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+           <form id="contact-form" action="POST">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+            </div>
+           
+            <button type="submit">Send Message</button>           </form>
+
+        </section>
+
+        <footer class="site-footer">
+            
+            <p>
+                <span class="footer-text"></span> Satish Ganji | Web Developer | &copy; 2026
+            </p>
+            <nav>
+                <a href="https://github.com/satishganji" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="">LinkedIn</a>
+            </nav>
+        </footer>
+        
+    </main>
+</body>
+</html>
