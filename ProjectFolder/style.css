@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    line-height: 1.6;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(248, 248, 227);
+    padding: 20px;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color:rgb(116, 3, 26)
+}
+.nav-links{
+     display: flex;
+    list-style: none;
+    gap: 30px;
+
+}
+.nav-links a{
+    text-decoration: none;
+    color:rgb(116, 3, 26);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+.nav-links a:hover{
+    background-color:rgb(222, 144, 159);
+    color: white;
+    border-radius: 5px;
+}
+.hero-section{
+    color: rgb(24, 3, 3);
+    background: linear-gradient(90deg,rgba(232, 241, 250, 1) 23%, rgba(87, 199, 133, 1) 100%, rgba(237, 221, 83, 1) 87%);
+    padding: 100px;
+    text-align: center;
+}
+.hero-section h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
