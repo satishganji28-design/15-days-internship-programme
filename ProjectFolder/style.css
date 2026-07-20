@@ -48,3 +48,63 @@ body{
     font-size: 50px;
     margin-bottom: 20px;
 }
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.skill-item{
+    background-color:rgb(40, 40, 6);
+    border: 3px solid rgb(4, 134, 45);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.skill-item:hover{
+    background-color: rgb(117, 201, 144);
+    color: white;
+    border: 3px solid rgb(4, 251, 82);
+    box-shadow: 0 5px 5px grey;
+    transform: translateY(-5px);
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-card{
+    background-color:rgb(40, 40, 6);
+    border: 6px solid rgb(8, 18, 11);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+
+}
+
+.project-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(126, 119, 119, 0.929);
+    background-color: rgb(119, 214, 149);
+}
+
+.project-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-card a{
+    color: red;
+}
