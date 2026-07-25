@@ -108,3 +108,150 @@ body{
 .project-card a{
     color: red;
 }
+
+.btn{
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+.btn-primary{
+    background-color: rgb(32, 6, 6);
+    padding: 10px;
+    color: blueviolet;
+}
+.btn-primary:hover{
+    background: transparent;
+    border-color: black;
+    color: blanchedalmond;
+
+}
+.btn-secondary{
+    background: transparent;
+    color:aquamarine;
+}
+.btn-secondary:hover{
+    background-color: red;
+    color: whitesmoke;
+}
+
+.tagline{
+    padding: 20px;
+
+
+}
+section h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+
+
+}
+section h2::after{
+    width: 60px;
+    height: 4px;
+    background-color: bisque;
+    margin: 12px;
+    border-radius: 2px;
+    content: "";
+}
+
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.hero-section h1{
+    animation: fadeInUp 2s ease 0.6s both;
+}
+.hero-button{
+    animation: fadeInUp 4s ease 1.2s both;
+}
+
+.contact-section{
+    background-color:rgb(18, 40, 32);
+}
+
+#contact-form{
+    max-width: 600px;
+    margin: 0 auto ;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.form-group{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: red;
+}
+.form-group input, .form-group textarea{
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid rgb(145, 145, 26);
+    border-radius: 14px;
+}
+
+.site-footer{
+    background-color: black;
+    padding: 60px 4px;
+    text-align: center;
+}
+#send-message{
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(70, 54, 33);
+    color: rgb(155, 94, 13);
+}
+
+.about-section{
+    text-align: center;
+}
+.profile-figure{
+    color: aqua;
+}
+
+.menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+@media(max-width:768px){
+    .menu-toggle{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: aquamarine;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .nav-links.open{
+        display: flex;
+    }
+}
+
+@media(max-width:768px){
+    .nav-links{display: none;}
+    .menu-toggle{display: block;}
+    .hero-section h1{font-size: 20px;}
+    .project-grid{grid-template-columns: 1fr;}
+}

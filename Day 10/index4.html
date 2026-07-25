@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fruits = ["apple","blueorange","kiwi"];
+        for(let i= 0 ; i<fruits.length ; i++){
+           console.log(i, fruits[i]);
+        }
+        //ARRAY METHODS
+        //1. map()--> transform each item --> return new array
+        const upperFruits= fruits.map(f => f.toUpperCase());
+        console.log(upperFruits);//["APPLE","ORANGE"]
+        const fruits_filter = fruits.filter(fruit=>fruit.includes("orange"));
+         console.log(fruits_filter);
+        const total_fruits = fruits.reduce((total, fruit)=> total + fruit.length, 0);
+        console.log(total_fruits);
+    </script>
+</body>
+</html>
+ 
+ 
+ 

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sukanya| Web Developer Portfolio</title>
+    <meta name="description" content="Full Stack Web Developer" />
+    <meta
+      name="keywords"
+      content="web developer, React, JavaScript, portfolio"
+    />
+    <meta name="author" content="Sukanya" />
+    <!-- Open graph -->
+    <meta property="og:title" content="Sukanya | Web Developer" />
+    <meta
+      property="og:description"
+      content="Check out my portfolio and projects"
+    />
+    <meta
+      property="og:image"
+      content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-BVHT6ma7KDYlCtuy0oqPFubmrV8TqZeUPuehHfy7bpiX5TmcZSs7uqWe&s=10%22
+    />
+    <meta
+      property="url"
+      content="http://127.0.0.1:5500/ProjectFolder/index.html"
+    />
+    <meta property="og:type" content="website" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sukanya | Web Developer" />
+    <meta name="description" content="Check out my portfolio and projects" />
+ 
+    <link rel="shortcut icon" href="./github.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER + NAVIGATION -->
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="logo">Sukanya</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- FOR DARK MODE -->
+        <button
+          class="theme-toggle"
+          title="Toggle Dark Mode"
+          aria-label="Toggle Dark Mode"
+        >
+          🌛
+        </button>
+ 
+        <!-- Mobile Menu -->
+        <button
+          class="menu-toggle"
+          aria-label="Toggle Navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </nav>
+    </header>
+ 
+    <!-- MAIN Content -->
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero-section" id="hero">
+        <h1>Hi, <span class="highlight">I'm Sukanya</span></h1>
+        <p class="tagline">
+          <strong>I build beautiful, fast, accessible websites</strong>
+        </p>
+        <div class="hero-buttons">
+          <a href="" class="btn btn-primary">View My Work</a>
+          <a href="" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </section>
+ 
+      <!-- ABOUT SECTION -->
+      <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <figure class="profile-figure">
+            <img src="../Day 3/images.jpg" alt="profile pic" width="300" />
+            <figcaption>Sukanya-Web Developer</figcaption>
+          </figure>
+          <div class="about-text">
+            <p>I'm a passionate web developer...</p>
+          </div>
+        </div>
+      </section>
+ 
+      <!-- SKILLS SECTION -->
+      <section id="skills" class="skill-section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item">HTML</div>
+          <div class="skill-item">CSS</div>
+          <div class="skill-item">JS</div>
+          <div class="skill-item">REACT</div>
+        </div>
+      </section>
+ 
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+          <article class="project-card" data-category="web" data-year="2026">
+            <img src="../Day 3/github.png" alt="weather app ss" />
+            <h3>Weather App</h3>
+            <p>Real-time weather dashboard using API</p>
+            <div class="project-tags">
+              <span class="tag">REACT</span>
+              <span class="tag">API</span>
+            </div>
+            <a href="" class="btn">Live Demo</a>
+            <a href="" class="btn">GitHub</a>
+          </article>
+          <article class="project-card" data-category="web" data-year="2026">
+            <img src="../Day 3/github.png" alt="weather app ss" />
+            <h3>Weather App</h3>
+            <p>Real-time weather dashboard using API</p>
+            <div class="project-tags">
+              <span class="tag">REACT</span>
+              <span class="tag">API</span>
+            </div>
+            <a href="" class="btn">Live Demo</a>
+            <a href="" class="btn">GitHub</a>
+          </article>
+          <article class="project-card" data-category="web" data-year="2026">
+            <img src="../Day 3/github.png" alt="weather app ss" />
+            <h3>Weather App</h3>
+            <p>Real-time weather dashboard using API</p>
+            <div class="project-tags">
+              <span class="tag">REACT</span>
+              <span class="tag">API</span>
+            </div>
+            <a href="" class="btn">Live Demo</a>
+            <a href="" class="btn">GitHub</a>
+          </article>
+          <article class="project-card" data-category="web" data-year="2026">
+            <img src="../Day 3/github.png" alt="weather app ss" />
+            <h3>Weather App</h3>
+            <p>Real-time weather dashboard using API</p>
+            <div class="project-tags">
+              <span class="tag">REACT</span>
+              <span class="tag">API</span>
+            </div>
+            <a href="" class="btn">Live Demo</a>
+            <a href="" class="btn">GitHub</a>
+          </article>
+         
+        </div>
+      </section>
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="contact-section">
+        <h2>Get In Touch</h2>
+        <form id="contact-form" action="" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5" required></textarea>
+          </div>
+          <button id="send-message" type="submit">Send Message</button>
+        </form>
+      </section>
+      <!-- FOOTER -->
+      <footer class="site-footer">
+        <p>
+          &copy; <span class="footer-year"></span> Sukanya. Build with HTML,
+          CSS, JS
+        </p>
+ 
+        <nav arial-label="Social links">
+          <a href="">GitHub</a>
+          <a href="">LinkedIn</a>
+        </nav>
+      </footer>
+    </main>
+  </body>
+</html>
+ 
